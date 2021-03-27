@@ -17,16 +17,17 @@
 }
 
 .library-song {
+    background-color: white;
     display: flex;
     align-items: center;
     padding: 1rem 2rem;
     cursor: pointer;
+    transition: background 0.5s ease;
     img {
         width: 30%;
     }
     &:hover {
-        // background-color: rgb(204, 238, 238);
-        background-color: rgb(190, 226, 221);
+        background-color: rgb(203, 236, 232);
     }
 }
 
@@ -62,10 +63,15 @@
 
 .selected {
     background: rgb(157, 218, 211);
-
 }
 
 .active-library {
     transform: translateX(0%);
     opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+    .library {
+        width: 100%;
+    }
 }
