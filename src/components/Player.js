@@ -24,7 +24,7 @@ const Player = ({audioRef, currentSong, isPlaying, setIsPlaying, setSongInfo, so
             }
         });
         setSongs(newSongs);
-    }
+    };
     const playSongHandler = () => {
         if (isPlaying) {
             audioRef.current.pause();
